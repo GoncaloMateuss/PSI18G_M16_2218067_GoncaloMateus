@@ -40,7 +40,9 @@ namespace Famões_Clube_Atlético
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
