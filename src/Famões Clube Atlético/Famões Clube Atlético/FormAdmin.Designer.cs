@@ -1,6 +1,6 @@
 ﻿namespace Famões_Clube_Atlético
 {
-    partial class Form1
+    partial class FormAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -54,7 +53,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button4);
@@ -68,26 +66,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel3.Location = new System.Drawing.Point(0, 77);
+            this.panel3.Location = new System.Drawing.Point(3, 114);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 54);
             this.panel3.TabIndex = 3;
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(16, 317);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(161, 54);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Admin";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -97,9 +79,9 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(16, 137);
+            this.button2.Location = new System.Drawing.Point(12, 174);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 54);
+            this.button2.Size = new System.Drawing.Size(165, 54);
             this.button2.TabIndex = 4;
             this.button2.Text = "Escalões";
             this.button2.UseVisualStyleBackColor = true;
@@ -112,9 +94,9 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(16, 197);
+            this.button3.Location = new System.Drawing.Point(12, 234);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 54);
+            this.button3.Size = new System.Drawing.Size(165, 54);
             this.button3.TabIndex = 5;
             this.button3.Text = "Inscrições";
             this.button3.UseVisualStyleBackColor = true;
@@ -127,9 +109,9 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(16, 257);
+            this.button4.Location = new System.Drawing.Point(12, 294);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 54);
+            this.button4.Size = new System.Drawing.Size(165, 54);
             this.button4.TabIndex = 6;
             this.button4.Text = "Calendário";
             this.button4.UseVisualStyleBackColor = true;
@@ -142,7 +124,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(16, 77);
+            this.button1.Location = new System.Drawing.Point(16, 114);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 54);
             this.button1.TabIndex = 3;
@@ -212,7 +194,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(729, 22);
+            this.button7.Location = new System.Drawing.Point(737, 22);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(41, 32);
             this.button7.TabIndex = 9;
@@ -227,7 +209,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(776, 22);
+            this.button6.Location = new System.Drawing.Point(784, 22);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(41, 32);
             this.button6.TabIndex = 8;
@@ -242,7 +224,7 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(854, 22);
+            this.button8.Location = new System.Drawing.Point(872, 22);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(41, 32);
             this.button8.TabIndex = 10;
@@ -251,12 +233,12 @@
             // 
             // paginaInicial1
             // 
-            this.paginaInicial1.Location = new System.Drawing.Point(177, 159);
+            this.paginaInicial1.Location = new System.Drawing.Point(177, 155);
             this.paginaInicial1.Name = "paginaInicial1";
-            this.paginaInicial1.Size = new System.Drawing.Size(748, 338);
+            this.paginaInicial1.Size = new System.Drawing.Size(748, 342);
             this.paginaInicial1.TabIndex = 11;
             // 
-            // Form1
+            // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -271,7 +253,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "FormAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "-";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -292,7 +274,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
