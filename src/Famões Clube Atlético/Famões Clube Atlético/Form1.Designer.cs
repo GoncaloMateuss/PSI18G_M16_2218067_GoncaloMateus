@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.painellat = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -45,6 +45,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.paginaInicial1 = new Famões_Clube_Atlético.PaginaInicial();
+            this.escaloes1 = new Famões_Clube_Atlético.Escaloes();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,7 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.painellat);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
@@ -65,13 +66,13 @@
             this.panel1.Size = new System.Drawing.Size(177, 497);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
+            // painellat
             // 
-            this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel3.Location = new System.Drawing.Point(0, 77);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 54);
-            this.panel3.TabIndex = 3;
+            this.painellat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.painellat.Location = new System.Drawing.Point(0, 77);
+            this.painellat.Name = "painellat";
+            this.painellat.Size = new System.Drawing.Size(10, 54);
+            this.painellat.TabIndex = 3;
             // 
             // button5
             // 
@@ -103,6 +104,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Escalões";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -256,12 +258,20 @@
             this.paginaInicial1.Size = new System.Drawing.Size(748, 338);
             this.paginaInicial1.TabIndex = 11;
             // 
+            // escaloes1
+            // 
+            this.escaloes1.Location = new System.Drawing.Point(177, 159);
+            this.escaloes1.Name = "escaloes1";
+            this.escaloes1.Size = new System.Drawing.Size(748, 342);
+            this.escaloes1.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(925, 497);
+            this.Controls.Add(this.escaloes1);
             this.Controls.Add(this.paginaInicial1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -296,11 +306,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel painellat;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
         private PaginaInicial paginaInicial1;
+        private Escaloes escaloes1;
     }
 }
 

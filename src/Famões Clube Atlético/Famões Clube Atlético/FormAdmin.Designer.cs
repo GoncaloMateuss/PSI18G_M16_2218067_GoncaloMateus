@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.painellat = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -43,6 +43,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.escaloes1 = new Famões_Clube_Atlético.Escaloes();
             this.paginaInicial1 = new Famões_Clube_Atlético.PaginaInicial();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -52,7 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.painellat);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button4);
@@ -63,13 +64,13 @@
             this.panel1.Size = new System.Drawing.Size(177, 497);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
+            // painellat
             // 
-            this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel3.Location = new System.Drawing.Point(3, 114);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 54);
-            this.panel3.TabIndex = 3;
+            this.painellat.BackColor = System.Drawing.Color.DodgerBlue;
+            this.painellat.Location = new System.Drawing.Point(3, 114);
+            this.painellat.Name = "painellat";
+            this.painellat.Size = new System.Drawing.Size(10, 54);
+            this.painellat.TabIndex = 3;
             // 
             // button2
             // 
@@ -85,6 +86,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Escalões";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -194,7 +196,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(737, 22);
+            this.button7.Location = new System.Drawing.Point(731, 22);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(41, 32);
             this.button7.TabIndex = 9;
@@ -209,7 +211,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(784, 22);
+            this.button6.Location = new System.Drawing.Point(778, 22);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(41, 32);
             this.button6.TabIndex = 8;
@@ -224,12 +226,19 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(872, 22);
+            this.button8.Location = new System.Drawing.Point(856, 22);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(41, 32);
             this.button8.TabIndex = 10;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // escaloes1
+            // 
+            this.escaloes1.Location = new System.Drawing.Point(177, 155);
+            this.escaloes1.Name = "escaloes1";
+            this.escaloes1.Size = new System.Drawing.Size(748, 342);
+            this.escaloes1.TabIndex = 12;
             // 
             // paginaInicial1
             // 
@@ -244,6 +253,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(925, 497);
+            this.Controls.Add(this.escaloes1);
             this.Controls.Add(this.paginaInicial1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -277,11 +287,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel painellat;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
         private PaginaInicial paginaInicial1;
+        private Escaloes escaloes1;
     }
 }
 

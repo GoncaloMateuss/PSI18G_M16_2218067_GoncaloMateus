@@ -16,6 +16,9 @@ namespace Famões_Clube_Atlético
         public FormAdmin()
         {
             InitializeComponent();
+            painellat.Height = button1.Height;
+            painellat.Top = button1.Top;
+            paginaInicial1.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,14 +38,9 @@ namespace Famões_Clube_Atlético
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login login = new Login();
-            login.Show();
+            painellat.Height = button1.Height;
+            painellat.Top = button1.Top;
+            paginaInicial1.BringToFront();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -58,6 +56,13 @@ namespace Famões_Clube_Atlético
         private void button7_Click(object sender, EventArgs e)
         {
             Process.Start("https://www.facebook.com/famoesclubeatletico");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            painellat.Height = button2.Height;
+            painellat.Top = button2.Top;
+            escaloes1.BringToFront();
         }
     }
 }
