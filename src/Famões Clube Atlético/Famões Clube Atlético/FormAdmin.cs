@@ -64,5 +64,20 @@ namespace Famões_Clube_Atlético
             painellat.Top = button2.Top;
             escaloes1.BringToFront();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            painellat.Height = button3.Height;
+            painellat.Top = button3.Top;
+            inscricoesAdmin1.BringToFront();
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            painellat.Height = button4.Height;
+            painellat.Top = button4.Top;
+            calendarioAdmin1.BringToFront();
+        }
     }
 }

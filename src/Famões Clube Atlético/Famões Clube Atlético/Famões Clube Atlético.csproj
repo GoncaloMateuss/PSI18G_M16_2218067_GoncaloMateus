@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarioAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalendarioAdmin.Designer.cs">
+      <DependentUpon>CalendarioAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Escaloes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -65,6 +77,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inscricoes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inscricoes.Designer.cs">
+      <DependentUpon>Inscricoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscricoesAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InscricoesAdmin.Designer.cs">
+      <DependentUpon>InscricoesAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +103,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarioAdmin.resx">
+      <DependentUpon>CalendarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Escaloes.resx">
       <DependentUpon>Escaloes.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +117,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscricoes.resx">
+      <DependentUpon>Inscricoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscricoesAdmin.resx">
+      <DependentUpon>InscricoesAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

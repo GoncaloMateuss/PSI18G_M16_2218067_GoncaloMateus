@@ -44,8 +44,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.paginaInicial1 = new Famões_Clube_Atlético.PaginaInicial();
+            this.calendario1 = new Famões_Clube_Atlético.Calendario();
+            this.inscricoes1 = new Famões_Clube_Atlético.Inscricoes();
             this.escaloes1 = new Famões_Clube_Atlético.Escaloes();
+            this.paginaInicial1 = new Famões_Clube_Atlético.PaginaInicial();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -120,6 +122,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Inscrições";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -135,6 +138,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Calendário";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -251,6 +255,28 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // calendario1
+            // 
+            this.calendario1.Location = new System.Drawing.Point(177, 159);
+            this.calendario1.Name = "calendario1";
+            this.calendario1.Size = new System.Drawing.Size(748, 342);
+            this.calendario1.TabIndex = 14;
+            // 
+            // inscricoes1
+            // 
+            this.inscricoes1.Location = new System.Drawing.Point(177, 155);
+            this.inscricoes1.Name = "inscricoes1";
+            this.inscricoes1.Size = new System.Drawing.Size(748, 342);
+            this.inscricoes1.TabIndex = 13;
+            this.inscricoes1.Load += new System.EventHandler(this.inscricoes1_Load);
+            // 
+            // escaloes1
+            // 
+            this.escaloes1.Location = new System.Drawing.Point(177, 155);
+            this.escaloes1.Name = "escaloes1";
+            this.escaloes1.Size = new System.Drawing.Size(748, 342);
+            this.escaloes1.TabIndex = 12;
+            // 
             // paginaInicial1
             // 
             this.paginaInicial1.Location = new System.Drawing.Point(177, 159);
@@ -258,19 +284,14 @@
             this.paginaInicial1.Size = new System.Drawing.Size(748, 338);
             this.paginaInicial1.TabIndex = 11;
             // 
-            // escaloes1
-            // 
-            this.escaloes1.Location = new System.Drawing.Point(177, 159);
-            this.escaloes1.Name = "escaloes1";
-            this.escaloes1.Size = new System.Drawing.Size(748, 342);
-            this.escaloes1.TabIndex = 12;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(925, 497);
+            this.Controls.Add(this.calendario1);
+            this.Controls.Add(this.inscricoes1);
             this.Controls.Add(this.escaloes1);
             this.Controls.Add(this.paginaInicial1);
             this.Controls.Add(this.button8);
@@ -312,6 +333,8 @@
         private System.Windows.Forms.Button button8;
         private PaginaInicial paginaInicial1;
         private Escaloes escaloes1;
+        private Inscricoes inscricoes1;
+        private Calendario calendario1;
     }
 }
 
