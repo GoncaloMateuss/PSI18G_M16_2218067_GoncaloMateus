@@ -117,6 +117,7 @@
             this.txtcontacto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontacto.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtcontacto.Location = new System.Drawing.Point(311, 94);
+            this.txtcontacto.MaxLength = 9;
             this.txtcontacto.Name = "txtcontacto";
             this.txtcontacto.Size = new System.Drawing.Size(288, 22);
             this.txtcontacto.TabIndex = 7;
@@ -126,6 +127,7 @@
             this.txtescalaoatleta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtescalaoatleta.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtescalaoatleta.Location = new System.Drawing.Point(311, 70);
+            this.txtescalaoatleta.MaxLength = 20;
             this.txtescalaoatleta.Name = "txtescalaoatleta";
             this.txtescalaoatleta.Size = new System.Drawing.Size(288, 22);
             this.txtescalaoatleta.TabIndex = 8;
@@ -153,6 +155,7 @@
             this.txtdatanascimento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtdatanascimento.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtdatanascimento.Location = new System.Drawing.Point(311, 163);
+            this.txtdatanascimento.MaxLength = 4;
             this.txtdatanascimento.Name = "txtdatanascimento";
             this.txtdatanascimento.Size = new System.Drawing.Size(288, 22);
             this.txtdatanascimento.TabIndex = 11;

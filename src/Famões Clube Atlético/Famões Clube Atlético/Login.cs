@@ -91,5 +91,12 @@ namespace Famões_Clube_Atlético
                 }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TrocarPassword trocar = new TrocarPassword();
+            trocar.Show();
+        }
     }
 }
